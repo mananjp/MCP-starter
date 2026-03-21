@@ -1,8 +1,6 @@
-version: '3.8'
-
 services:
   backend:
-    image: mananjp/mcp-starter-backend:latest   # ← pull from Docker Hub
+    image: ghcr.io/mananjp/mcp-starter-backend:latest
     ports:
       - "8000:8000"
     environment:
@@ -15,7 +13,7 @@ services:
       start_period: 10s
 
   frontend:
-    image: mananjp/mcp-starter-frontend:latest  # ← pull from Docker Hub
+    image: ghcr.io/mananjp/mcp-starter-frontend:latest
     ports:
       - "8501:8501"
     depends_on:

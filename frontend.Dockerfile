@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1.4
 FROM python:3.11-slim-bullseye
-
+LABEL org.opencontainers.image.source=https://github.com/mananjp/MCP-starter
+LABEL org.opencontainers.image.description="PDF QA Streamlit Frontend"
+LABEL org.opencontainers.image.licenses=MIT
 WORKDIR /app
 
 # Install uv and dependencies with BuildKit caching

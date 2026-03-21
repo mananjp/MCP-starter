@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1.4
 FROM python:3.11-slim-bullseye
-
+LABEL org.opencontainers.image.source=https://github.com/mananjp/MCP-starter
+LABEL org.opencontainers.image.description="MCP Arithmetic Server"
+LABEL org.opencontainers.image.licenses=MIT
 WORKDIR /app
 
 # Install fastmcp dependencies with BuildKit cache
